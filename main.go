@@ -5,7 +5,6 @@ import (
 	"bufio"
 	"strings"
 	"net/http"
-	"fmt"
 	"log"
 	"strconv"
 	"github.com/prometheus/client_golang/prometheus"
@@ -68,7 +67,6 @@ func (h *hindsight) Describe(ch chan<- *prometheus.Desc) {
 }
 
 func (h *hindsight) Collect(ch chan<- prometheus.Metric) {
-	fmt.Println("DONCHED");
 	h.fetchHindsightStatistcs(ch)
 }
 

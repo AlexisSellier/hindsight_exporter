@@ -88,7 +88,7 @@ func main() {
 		w.Write([]byte(`<html>
 		       <head><title>Warp10 exporter</title></head>
 		       <body>
-		       <h1>Warp10 exporter</h1>
+		       <h1>Hindsight exporter</h1>
 		       <p><a href='` + *metricPath + `'>Metrics</a></p>
 		       </body>
 		       </html>`))
